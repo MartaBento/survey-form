@@ -11,24 +11,29 @@
 
     <!--title-->
     <h1 id="title">Event Survey</h1>
+    <h2 id="sub-title">You attented the event: "<i>101 ways to improve your JavaScript skills</i>".</h2>
     <p id="description">Please tell us about your latest experience in our event, so we can improve the next ones!</p>
     
     <!--forms-->
     <div id="box">
         <form id="survey-form" action="/form-sent.html" method="get">
         <p id="required-intro">Required fields are followed by <abbr title="required">*</abbr>.</p>
+        
             <div>
                 <label id="name-label" for="username">Name:<abbr title="required">*</abbr></label>
                 <input id="name" type="text" name="name" required placeholder="Enter your name">
             </div>
+
             <div>
                 <label id="email-label" for="email">Email:<abbr title="required">*</abbr></label>
                 <input id="email" type="email" name="email" required placeholder="Enter your email">
             </div>
+
             <div>
                 <label id="number-label" for="age">Age:<abbr title="required">*</abbr></label>
                 <input id="number" type="number" name="number" min="18" max="125" required placeholder="Enter your age">
             </div>
+
             <div>
                 <label for="heardAboutEvent">How did you hear about this event?</label>
                 <select id="dropdown" name="heardAboutEvent" class="dropdown">
@@ -40,34 +45,46 @@
                         <option value="other">Other</option>
                 </select> 
             </div>
+
             <div>
                 <label for="attendEvent">Why did you decide to attend our event?</label>
                 <select id="dropdown" name="attendEvent" class="dropdown">
-                            <option disabled value>Select an option:</option>
-                            <option value="flyer">Networking</option>
-                            <option value="newsletter">Location</option>
-                            <option value="internet">Speaker</option>
-                            <option value="friend">Topic of interest</option>
-                            <option value="other">Other</option>
+                        <option disabled value>Select an option:</option>
+                        <option value="flyer">Networking</option>
+                        <option value="newsletter">Location</option>
+                        <option value="internet">Speaker</option>
+                        <option value="friend">Topic of interest</option>
+                        <option value="other">Other</option>
                 </select> 
             </div>
+
             <div>
-                <label for="attendEvent">Why did you decide to attend our event?</label>
-                    <select id="dropdown" name="attendEvent" class="dropdown">
-                                <option disabled value>Select an option:</option>
-                                <option value="flyer">Networking</option>
+                <label for="topicsCovered">How well did the topics covered in the event program develop your knowledge and understanding about the issue/topic?</label>
+                        <li class="radio"><label>Very well<input name="radio-button" value="1"  type="radio" class="userRatings" ></label></li>
+                        <li class="radio"><label>A little<input name="radio-button" value="2"  type="radio" class="userRatings" ></label></li>
+                        <li class="radio"><label>Not very well<input name="radio-button" value="3"  type="radio" class="userRatings" ></label></li>
+                        <li class="radio"><label>Not at all<input name="radio-button" value="4"  type="radio" class="userRatings" ></label></li>
+                    </select> 
+                </div>
+            <div>
+
+                <label for="improving">Please tell us the things that should be improved in the future.</label>
+                    <ul id="preferences" style="list-style: none;">
+                        <li class="checkbox"><label><input name="preferences" value="1" type="checkbox" class="userRatings">Program format</label></li>
+                        <li class="checkbox"><label><input name="preferences" value="1" type="checkbox" class="userRatings">Featured guest</label></li>
+                        <li class="checkbox"><label><input name="preferences" value="1" type="checkbox" class="userRatings">Topic</label></li>
+                        <li class="checkbox"><label><input name="preferences" value="1" type="checkbox" class="userRatings">Location</label></li>
+                        <li class="checkbox"><label><input name="preferences" value="1" type="checkbox" class="userRatings">Food/Drink</label></li>
                     </select> 
                 </div>
 
-    </div>
-    </form>
+            <div>
+                <label for="improving">Addional comments/suggestions:</label>
+                    <textarea id="comments" class="input-field" style="height:100px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
 
-</body>
+            <button id ="submit" type="submit" form="survey-form" value="Submit">Submit</button>
+            </div>
+        </form>
+    <body>
 </html>
-
-
-<!--
-User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
-User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
-User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
-User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.-->
