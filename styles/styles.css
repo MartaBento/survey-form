@@ -1,16 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 2em;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(212, 212, 209);
     text-align: center;
-    box-sizing: content-box;
-    padding: 50px;
-    border-left: 50px solid rgb(0, 37, 59);
-    border-right: 50px solid rgb(0, 37, 59);
-    border-top: 50px solid rgb(0, 37, 59);
-    border-bottom: 50px solid rgb(0, 37, 59);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19);, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
 }
+
+h1 {
+    font-size: 40px;
+}
+
+section {
+    background-color: white;
+    text-align: left;
+    padding: 20px;
+    width:60%;
+    border-radius:5px;
+    height:auto;
+    margin:50px 20%;
+    position:relative;
+    border:1px solid #eee;
+    color: black;
+
+    -webkit-box-shadow: 7px 10px 12px -4px rgba(0,0,0,0.3);
+    -moz-box-shadow: 7px 10px 12px -4px rgba(0,0,0,0.3);
+    box-shadow: 7px 10px 12px -4px rgba(0,0,0,0.3);
+}
+
