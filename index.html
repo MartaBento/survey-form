@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="https://kit.fontawesome.com/f32b7ddb4f.js"></script>
 </head>
@@ -20,9 +22,9 @@
     <!--forms-->
     <div id="box">
         <form id="survey-form" action="/form-sent.html" method="get">
-            <p id="required-intro">Required fields are followed by <abbr title="required">*</abbr>.</p>
 
             <section>
+                <p id="required-intro">Required fields are followed by <abbr title="required">*</abbr>.</p>
                 <div>
                     <label class="label" id="name-label" for="username">Name: <abbr title="required">*</abbr></label>
                     <input class="input" id="name" type="text" name="name" required placeholder="Enter your name">
@@ -102,19 +104,18 @@
                     <textarea class="input" id="comments" class="input-field" style="height:100px;resize:vertical;"
                         name="comment" placeholder="Enter your comment here..."></textarea>
                 </div>
-                <div id="submit" class="box-3">
-                    <div class="btn btn-three">
-                        <span>Submit <i class="fas fa-paper-plane"></i></span>
 
-                    </div>
-                </div>
-        </form>
-        </section>
+                <br>
 
-        <body>
+                <!--button-->
+                <button class="btn peach-gradient" id="submit" type="submit" form="survey-form"
+                    value="Submit">Submit</button>
+
+                <br>
+    </div>
+    </form>
+    </section>
+
+</body>
 
 </html>
-
-
-
-<!--            <button id ="submit" type="submit" form="survey-form" value="Submit">Submit</button>-->
